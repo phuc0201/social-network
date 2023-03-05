@@ -1,0 +1,41 @@
+.sidebarContainer{
+    flex: 0.33;
+    position: sticky;
+    top: 54px;
+    overflow-y: smooth;
+    height: calc(100vh - 54px);
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .sidebarRow{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        .Image{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+        .Image.border_radius{
+            border-radius: 50%;
+        }
+        svg{
+            font-size: 35px;
+        }
+        .title{
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        &:hover{
+            background-color: rgba($color: #000000, $alpha: 0.04);
+        }
+    }
+}

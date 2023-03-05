@@ -1,0 +1,23 @@
+:root{
+    --logo-color: #0e8ef1;
+    --main-color: #1b74e4;
+    --text-color: #050505;
+    --background-color: #f0f2f5;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+    color: #050505;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f0f2f5;
+    .avatar{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 50%
+    }
+}

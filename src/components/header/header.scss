@@ -1,0 +1,91 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    width: 100%;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .header-item{
+        display: flex;
+    }
+    .header-item__left{
+        .logo{
+            text-decoration: none;
+            margin: auto 16px;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 50%;
+            background-color: var(--logo-color);
+            display: flex;
+            span{
+                margin: auto;
+                color: #fff;
+            }
+        }
+    }
+    .header-item__middle{
+        nav{
+            margin: auto;
+            .navbar-nav{
+                display: flex;
+                .nav-link{
+                    position: relative;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    margin: auto;
+                    display: inline-flex;
+                    padding: 4px 40px;
+                    .nav-icon{
+                        margin: 8px auto;
+                        font-size: 30px;
+                        path{
+                            color: #65676B;
+                        }
+                    }
+                    &:hover{
+                        background-color: #e3e5e992;
+                    }          
+                }
+                .nav-link.active{
+                    .nav-icon path{
+                        color: var(--main-color);
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        background-color: var(--main-color);
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .header-item__right{
+        display: flex;
+        align-items: center;
+        .header-item__right--icon{
+            font-size: 20px;
+            background-color: #c9cbce95;
+            padding: 6px 10px;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+        .avata_user{
+            margin: 0 16px 0 10px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("https://i.ibb.co/HFXm0G2/Bo-th-i.jpg");
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+}

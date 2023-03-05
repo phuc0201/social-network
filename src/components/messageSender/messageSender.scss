@@ -1,0 +1,52 @@
+.messageSender__wrapper{
+    width: 100%;
+    padding: 15px;
+    margin: 20px auto;
+    box-shadow: 0 1px 10px rgba($color: #000000, $alpha: 0.08);
+    border-radius: 5px;
+    background-color: #fff;
+    .messageSender__top{
+        display: flex;
+        margin-bottom: 10px;
+        .avatar{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        input{
+            flex: 1;
+            border-radius: 20px;
+            border: 0;
+            background-color: #dadee7c1;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+    .messageSender__bottom{
+        display: flex;
+        justify-content: space-between;
+        .messageSender__option{
+            display: flex;
+            margin: auto;
+            padding: 10px;
+            flex: 1;
+            .option{
+                display: flex;
+                margin: auto;
+                .icon{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                }
+            }
+            &:hover{
+                background-color: #e3e5e992;
+                border-radius: 5px;
+            }
+        }
+    }
+}
